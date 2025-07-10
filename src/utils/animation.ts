@@ -1,0 +1,1 @@
+export const lerp = (start: number, end: number, factor: number) => start * (1 - factor) + end * factor
