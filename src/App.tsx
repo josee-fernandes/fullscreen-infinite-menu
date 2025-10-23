@@ -1,10 +1,12 @@
-import { useEffect, useRef, useState } from "react";
 import "./styles/global.css";
-import { MenuItem } from "./components/MenuItem";
-import { lerp } from "./utils/animation";
+
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+import { useEffect, useRef, useState } from "react";
+
+import { MenuItem } from "./components/MenuItem";
 import { menuItemsData } from "./services/data";
+import { lerp } from "./utils/animation";
 
 export const App: React.FC = () => {
   const { contextSafe } = useGSAP();
